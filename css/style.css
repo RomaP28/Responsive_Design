@@ -73,7 +73,7 @@ body {
 }
 
 .links:hover{
-  color: #2E7A9A;
+  color: #0078AA;
 }
 
 .main_signs{
@@ -91,4 +91,20 @@ body {
 .description{
   width:82%;
   font-size: small;
+}
+
+/* .svg_container{
+
+} */
+
+.svg {
+  margin-right: 2%;
+  background: #0078AA;
+  border-radius: 50%;
+  height: 2.6em;
+  width: 2.6em;
+  /* fill: darkgreen; */
+}
+img{
+  fill: darkgreen;
 }
