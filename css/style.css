@@ -93,18 +93,21 @@ body {
   font-size: small;
 }
 
-/* .svg_container{
+.svg_container{
+  width:170px;
+  display: flex;
+  justify-content: space-between;
+}
 
-} */
+
 
 .svg {
-  margin-right: 2%;
+  /* margin-right: 2%; */
+  text-align: center;
   background: #0078AA;
   border-radius: 50%;
-  height: 2.6em;
-  width: 2.6em;
+  padding-top:10px;
+  height: 35px;
+  width: 45px;
   /* fill: darkgreen; */
-}
-img{
-  fill: darkgreen;
 }
