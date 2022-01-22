@@ -20,6 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -41,6 +42,7 @@ body {
   width: 100%;
   height: 54px;
   background-color: white;
+  z-index: 100;
 }
 
 .logo{
@@ -80,6 +82,7 @@ body {
   margin-top: 17%;
   margin-left: 12%;
   width: 35%;
+  z-index: 0;
 }
 
 
@@ -92,30 +95,222 @@ body {
   font-size: small;
 }
 
+
+
 .svg_container{
   width:170px;
   display: flex;
   justify-content: space-between;
 }
 
-.svg {
-  cursor: pointer;
-  text-align: center;
-  padding-top:10px;
-  height: 35px;
-  width: 45px;
+.svg{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  border: 1px solid #0078AA;
   background-color: #0078AA;
+  text-align: center;
+  border: 1px solid transparent;
+  margin: 0 22px 0 0 ;
 }
 
 .svg:hover{
-  background: white;
+  background-color: white;
+  border-color: #0078AA;
 }
 
-path:hover{
-  cursor: pointer;
-  fill:#0078AA;
-  stroke:red;
+.svg svg{
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  padding: 8px 6px;
 }
 
+.svg svg:hover{
+  fill: #0078AA;
+}
+
+.about{
+  margin-bottom: 5%;
+}
+
+.text_content{
+  margin-top: 60px;
+  width:30%;
+  margin-right: 18%;
+  float:right;
+}
+.text_content > h2{
+  font-size: 2em;
+  font-weight: 600;
+}
+.text_content > p{
+  text-transform: uppercase;
+  color:#0078AA;
+}
+.image_content{
+  width: 50%;
+}
+
+.fonts article p{
+ font-size: small;
+}
+
+.arrow{
+  margin-top: 3px;
+  margin-right: 5px;
+  float:left;
+}
+
+.services{
+  width: 100%;
+  padding-top:3%;
+  padding-bottom:4%;
+  text-align: center;
+  background-size: 100%;
+  background-position: 0;
+  background: url(../img/services_bg.jpg) no-repeat;
+}
+
+.font_h2{
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.font_p{
+  text-transform: uppercase;
+}
+
+.options_block{
+  display: flex;
+  justify-content: center;
+}
+
+.bg_blocks{
+  text-align: left;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding:20px;
+  width:22%;
+  background-color: white;
+}
+
+.options_images{
+  width:30%;
+}
+
+.prices{
+  position: relative;
+  width: 100%;
+  padding-top:90px;
+  padding-bottom:4%;
+  text-align: center;
+  background-position: 0;
+  background: url(../img/pricing_bg.jpg) no-repeat;
+}
+
+.rectangle{
+  position: relative;
+  color: white;
+  margin-left: 11%;
+  margin-top: 65px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width:78%;
+  height:420px;
+  background:#47C8E5;
+  z-index: 0;
+}
+
+.check_fonts h2{
+  font-size: 4em;
+}
+
+.check_fonts h3{
+  font-size: 1.5em;
+}
+
+.check_fonts p{
+  font-size: medium;
+}
+
+.left_content{
+  margin-right:70%;
+  padding: 2%;
+}
+
+.center_content{
+  position: absolute;
+  top: 170px;
+  width:26%;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  margin-left: 36%;
+  z-index: 50;
+  color: #0578A5;
+  border: 2px solid #0578A5;
+  background-color: white;
+}
+
+.right_content{
+  position: absolute;
+  right:0px;
+  top:30px;
+  width: 30%;
+  padding: 2%;
+}
+
+.prices_button{
+  color: #0578A5;
+  padding: 10px 20px;
+  border-color: #0578A5;
+  border-radius: 6px;
+}
+
+
+.contact{
+  display: flex;
+}
+
+.bg_contact{
+  width:50%;
+  height:auto;
+}
+
+.text_contact{
+  background-color: white;
+  margin-top: 80px;
+  width: 50%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+}
+
+.fields{
+  font-style: italic;
+  border:none;
+  border-bottom: 1px solid gray;
+  background:none;
+  outline: none;
+  padding:5px;
+}
+
+#submit{
+  font-style: normal;
+  font-weight: bold;
+  padding: 10px 10px;
+  width: 100px;
+  color:white;
+  border-radius: 6px;
+  background-color: #0578A5;
+}
+
+footer{
+  padding:6px 0;
+  text-align: center;
+  color:white;
+  background-color: #363636;
+}
