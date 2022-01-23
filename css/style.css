@@ -43,7 +43,6 @@ body {
 }
 .logo{
   position: absolute;
-  width: 2%;
   margin-left: 12%;
   bottom: 14px;
 }
@@ -119,14 +118,16 @@ body {
 .svg svg:hover{
   fill: #0078AA;
 }
+  /* --------------------------ABOUT-------------------------------- */
 .about{
   position: relative;
-  margin-bottom: 5%;
+  overflow: hidden;
 }
 .text_content{
-  margin-top: 60px;
   width:30%;
+  margin-top: 60px;
   margin-right: 18%;
+  padding-bottom: 10%;
   float:right;
 }
 .text_content > h2{
@@ -141,19 +142,20 @@ body {
   width: 50%;
 }
 .fonts article p{
- font-size: small;
+  font-size: small;
 }
 .arrow{
   margin-top: 3px;
   margin-right: 5px;
   float:left;
 }
+  /* --------------------------SERVIVES-------------------------------- */
 .services{
   width: 100%;
   padding-top:3%;
   padding-bottom:4%;
   text-align: center;
-  background-size: 100%;
+  background-size: 80%;
   background-position: 0;
   background: url(../img/services_bg.jpg) no-repeat;
 }
@@ -179,6 +181,7 @@ body {
 .options_images{
   width:30%;
 }
+/* --------------------------PRICES-------------------------------- */
 .prices{
   position: relative;
   width: 100%;
@@ -214,7 +217,7 @@ body {
 .center_content{
   position: absolute;
   top: 180px;
-  width:26%;
+  width:30%;
   padding-top: 70px;
   padding-bottom: 60px;
   margin-left: 36%;
@@ -237,12 +240,14 @@ body {
   border-color: #0578A5;
   border-radius: 6px;
 }
+/* --------------------------CONTACTS-------------------------------- */
 .contact{
   display: flex;
 }
 .bg_contact{
   width:50%;
-  height:auto;
+  height:705px;
+  background: url(../img/contact_image.jpg) left no-repeat;
 }
 .text_contact{
   background-color: white;
@@ -278,3 +283,84 @@ footer{
   color:white;
   background-color: #363636;
 }
+/* --------------------------FOR TABLETS-------------------------------- */ 
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .header{
+    height: 700px;
+    background-position-x: 35%;
+    background-size: 190%;
+  }
+  .heading{
+    height:60px;
+  }
+  .logo{
+    margin-left: 10px;
+    bottom: 14px;
+  }
+  .navigation{
+    width: 45%;
+    margin-right: 8%; 
+  }
+  .links{
+    font-size: medium;
+    margin-right: 4%; 
+  }
+ .main_signs{
+    margin-top: 250px;
+    margin-left: 2%;
+    width: 70%;
+  }
+  .main_sign{
+    font-size: 2.6em;
+  }
+  .text_content{
+    margin-top: 0px;
+    width:40%;
+    margin-right:5%;
+  }
+  .image_content{
+    margin-top: 70px;
+  }
+  .services{
+    padding-top:10%;
+    padding-bottom:6%;
+  }
+  .bg_blocks{
+    margin-right: 15px;
+    padding: 25px 20px 20px 20px; 
+    width:25%;
+  }
+  .options_images{
+    width:70%;
+  }
+  .prices{
+    padding-top:30px;
+  }
+  .rectangle{
+    margin-left: 4%;
+    width:90%;
+  }
+  .left_content{
+    width:26%;
+  }
+  .center_content{
+    top: 120px;
+    padding-bottom: 40px;
+  }
+  .right_content{
+    width: 26%;
+  }
+  .bg_contact{
+    height:560px;
+    background-position-x: -50px;
+    background-size: 200%;
+  }
+  .text_contact{
+    margin-top: 10%;
+    padding-left: 2%;
+    width: 40%;
+  }
+  footer{
+    padding:10px 0;
+  }
+} 
