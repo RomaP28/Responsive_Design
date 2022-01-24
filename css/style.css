@@ -145,6 +145,7 @@ body {
   font-size: small;
 }
 .arrow{
+  line-height:2px;
   margin-top: 3px;
   margin-right: 5px;
   float:left;
@@ -419,5 +420,36 @@ footer{
     width: 30px;
     height: 30px;
     padding: 11px 6px;
+  }
+  .about{
+    position: relative;
+    text-align: center;
+  }
+  .text_content{
+    text-align: center;
+    width:100%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+  .image_content{
+    width: 100%;
+  }
+  .arrow{
+    float:none;
+   }
+   .services{
+    background-size:100% 100%;
+    background-position: 0;
+  }
+  .options_block{
+    display: flex;
+    flex-direction: column;
+  }
+  .bg_blocks{
+    margin-left:auto;
+    margin-right:auto;
+    width:85%;
   }
 }
