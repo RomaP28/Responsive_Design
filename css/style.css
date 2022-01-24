@@ -150,7 +150,7 @@ body {
   margin-right: 5px;
   float:left;
 }
-  /* --------------------------SERVIVES-------------------------------- */
+  /* --------------------------SERVISES-------------------------------- */
 .services{
   width: 100%;
   padding-top:3%;
@@ -184,9 +184,7 @@ body {
 }
 /* --------------------------PRICES-------------------------------- */
 .prices{
-  position: relative;
-  width: 100%;
-  padding-top:90px;
+  padding-top:60px;
   padding-bottom:4%;
   text-align: center;
   background-position: 0;
@@ -201,38 +199,35 @@ body {
 .check_fonts p{
   font-size: medium;
 }
-.left_content{
-  margin-right:70%;
-  padding: 2%;
-}
 .rectangle{
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  margin-left: 11%;
-  margin-top: 65px;
-  padding-top: 30px;
-  width:78%;
-  background:#47C8E5;
+  width:89%;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 0;
 }
+.left_content{
+  width: 27%;
+  padding: 2%;
+  background:#47C8E5;
+}
 .center_content{
-  position: absolute;
-  top: 180px;
-  width:30%;
   padding-top: 70px;
   padding-bottom: 60px;
-  margin-left: 36%;
-  z-index: 50;
+  width:35%;
   color: #0578A5;
-  border: 2px solid #0578A5;
+  border: 3px solid #0578A5;
   background-color: white;
+  z-index: 50;
 }
 .right_content{
-  position: absolute;
-  right:0px;
-  top:30px;
-  width: 30%;
+  width: 27%;
   padding: 2%;
+  background:#47C8E5;
 }
 .prices_button{
   cursor: pointer;
@@ -240,6 +235,7 @@ body {
   padding: 10px 20px;
   border-color: #0578A5;
   border-radius: 6px;
+  text-decoration: none;
 }
 /* --------------------------CONTACTS-------------------------------- */
 .contact{
@@ -451,5 +447,56 @@ footer{
     margin-left:auto;
     margin-right:auto;
     width:85%;
+  }
+  .rectangle{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    color: white;
+    width:89%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+  }
+  .left_content{
+    width:100%;
+    padding: 2%;
+    margin-top: 20px;
+  }
+  .center_content{
+    width:100%;
+    padding: 2%;
+    margin-top: 20px;
+  }
+  .right_content{
+    width:100%;
+    padding: 2%;
+    margin-top: 20px;
+  }
+  .contact{
+    flex-direction: column;
+  }
+  .bg_contact{
+    width: 100%;
+    height: 400px;
+    background-size: 100%;
+  }
+  .text_contact{
+    width:80%;
+    text-align: center;
+    margin: 0px auto 15px auto;
+  }
+  .text_contact h2{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text_contact p{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer{
+    padding:8px 0;
   }
 }
